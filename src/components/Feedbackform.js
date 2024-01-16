@@ -21,7 +21,7 @@ export default function Feedbackform() {
     e.preventDefault();
 
     try {
-      const response = await axios.post("/submit-feedback", feedbackData);
+      const response = await axios.post("/feedback", feedbackData);
 
       console.log("Feedback submitted:", response.data);
       // Clear the form fields or display a success message
